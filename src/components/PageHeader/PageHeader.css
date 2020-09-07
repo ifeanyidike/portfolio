@@ -1,0 +1,24 @@
+.header {
+  background-color: #00416d;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header > h1 {
+  font-weight: 200 !important;
+  color: #fff;
+  font-size: 44px;
+  line-height: 1.4;
+}
+
+.header > .header__avatar {
+  margin-left: 10px !important;
+  background-color: #f44336;
+}
+
+@media (max-width: 796px) {
+  .header {
+    margin-top: 70px !important;
+  }
+}

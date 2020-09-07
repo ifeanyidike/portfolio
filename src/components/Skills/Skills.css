@@ -1,0 +1,13 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+.skills__circularprogress {
+  justify-self: center !important;
+  align-self: center !important;
+  margin-top: 40vh !important;
+  height: 100vh;
+}

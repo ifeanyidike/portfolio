@@ -1,0 +1,17 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  width: 100vw;
+}
+.contact__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.contact__body > div {
+  display: flex;
+  justify-content: space-between;
+}

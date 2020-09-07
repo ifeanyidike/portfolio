@@ -1,0 +1,79 @@
+.sidedrawer {
+  font-family: "Roboto";
+
+  background: white;
+
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 200px;
+  z-index: 1000;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.sidedrawer.open {
+  transform: translateX(0);
+}
+
+.sidedrawer ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.sidedrawer li {
+  margin: 0.6rem 0;
+}
+
+.sidedrawer li:first-child {
+  margin: 0 !important;
+}
+
+.sidedrawer a {
+  color: #521751;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.sidedrawer a:hover,
+.sidedrawer a:active {
+  columns: #fa923f;
+}
+
+.sidedrawer__header {
+  background-color: #f5f1da;
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+  min-height: 90px;
+  padding: 30px 30px 40px;
+}
+
+.sidedrawer__header > h1 {
+  color: #008073;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+.sidedrawer__header > span {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #795548;
+}
+
+@media (max-width: 1300px) {
+}
+@media (max-width: 796px) {
+  .sidedrawer {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    position: fixed;
+  }
+}

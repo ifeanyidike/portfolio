@@ -1,0 +1,18 @@
+.contactcard__button {
+  background-color: #00416d !important;
+}
+
+.contactcard__nameIcon,
+.contactcard__emailIcon {
+  color: #00416d !important;
+}
+
+.contactcard__msg {
+  margin-bottom: 10px !important;
+  font-weight: 700;
+  color: red;
+}
+
+.MuiSvgIcon-root.contactcard__icon {
+  color: #00416d !important;
+}

@@ -1,0 +1,16 @@
+.home__index {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.drawer__mobile {
+  display: none !important;
+}
+
+.home > .MuiPaper-root.makeStyles-root-1.MuiPaper-elevation1 {
+}
+
+.home > .MuiPaper-root .makeStyles-root-6 .MuiPaper-elevation1 {
+  display: none !important;
+}

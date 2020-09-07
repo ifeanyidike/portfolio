@@ -1,0 +1,143 @@
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+  }
+}
+@-moz-keyframes bounce {
+  0%,
+  100% {
+    -moz-transform: translateY(0);
+  }
+  50% {
+    -moz-transform: translateY(-10px);
+  }
+}
+@-o-keyframes bounce {
+  0%,
+  100% {
+    -o-transform: translateY(0);
+  }
+  50% {
+    -o-transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.MuiPaper-root.MuiCard-root {
+  margin-top: 30px !important;
+  position: relative;
+}
+
+.portfoliocard__date {
+  position: absolute;
+  width: 40px;
+  height: 70px;
+  background-color: rgba(31, 221, 189, 0.747);
+  display: flex !important;
+  flex-direction: column !important;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.portfoliocard__date > span {
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.portfoliocard__media {
+  position: relative;
+}
+.portfoliocard__media > img {
+  max-height: 200px;
+}
+.portfoliocard__media > .portfoliocard__mediaicons {
+  position: absolute;
+  right: 5px;
+  bottom: -20px;
+}
+
+.MuiButtonBase-root.MuiFab-root {
+  margin-right: 8px !important;
+}
+.portfoliocard__fabCodeIcon {
+  background-color: white !important;
+  color: black !important;
+}
+
+.portfoliocard__fabGitHubIcon {
+  background-color: #f44336 !important;
+}
+
+.portfoliocard__fabOpenInNewIcon {
+  background-color: #2bc5d8 !important;
+}
+
+.portfoliocard__fabCodeIcon:hover,
+.portfoliocard__fabGitHubIcon:hover,
+.portfoliocard__fabOpenInNewIcon:hover,
+.portfoliocard__dribbleIcon:hover {
+  animation: bounce 2.5s infinite;
+  -webkit-animation: bounce 2.5s infinite;
+  -moz-animation: bounce 2.5s infinite;
+  -o-animation: bounce 2.5s infinite;
+}
+
+.MuiCardHeader-root {
+  margin-top: 15px !important;
+}
+.MuiCardHeader-content > .MuiCardHeader-title {
+  margin-left: 5px !important;
+  font-size: 20px;
+}
+.MuiCardHeader-content > .MuiCardHeader-subheader {
+  margin-left: 5px !important;
+  font-size: 12px;
+}
+
+.MuiCardContent-root > small {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #6d6d6d;
+  font-weight: 700;
+  font-style: italic;
+}
+.MuiCardContent-root > p {
+  padding-bottom: 10px;
+}
+
+.MuiCardContent-root > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.MuiCardContent-root > div > a > img {
+  height: 40px !important;
+  margin-right: 10px !important;
+}
+
+.MuiButtonBase-root.MuiIconButton-root > .MuiIconButton-label > small {
+  font-size: 13px;
+  padding-left: 7px;
+  font-weight: bold;
+}
