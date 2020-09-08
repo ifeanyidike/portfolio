@@ -16,9 +16,6 @@ import { Link } from "react-router-dom";
 import "./PortfolioCard.css";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    maxWidth: 400,
-  },
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
@@ -52,7 +49,7 @@ export default function PortfolioCard(props) {
   };
 
   return (
-    <Card className={classes.root}>
+    <Card className="portfoliocard">
       <div className="portfoliocard__media">
         <img src={props.url} alt={props.title} />
         <div className="portfoliocard__mediaicons">

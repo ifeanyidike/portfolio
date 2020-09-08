@@ -18,7 +18,7 @@ const Home = () => {
         </h1>
         <h2>
           <Typed
-            strings={["I'm <strong>Ifeanyi Dike</strong>,"]}
+            strings={["I'm <strong>Ifeanyi</strong>,"]}
             typeSpeed={40}
           ></Typed>
         </h2>
@@ -34,8 +34,8 @@ const Home = () => {
         <h4>
           <Typed
             strings={[
-              "I develop <strong><em>web and mobile apps</em></strong> for small, medium and large enterprises.",
-              "I can build high-quality apps/platforms for you using <strong>state-of-the-art</strong> technologies.",
+              "I develop scalable <strong><em>web and mobile apps</em></strong> for individuals and businesses.",
+              "I build top-notch apps using <strong>ReactJS, React Native, NodeJS & Python</strong>.",
             ]}
             typeSpeed={40}
             backSpeed={60}

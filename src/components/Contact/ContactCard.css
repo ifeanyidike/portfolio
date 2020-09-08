@@ -16,3 +16,10 @@
 .MuiSvgIcon-root.contactcard__icon {
   color: #00416d !important;
 }
+
+@media (max-width: 1015px) {
+  .contact__body > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

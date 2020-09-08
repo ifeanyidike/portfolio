@@ -37,5 +37,7 @@
 @media (max-width: 1015px) {
   .portfolio__body {
     align-items: center !important;
+    flex-direction: column !important;
+    justify-content: center;
   }
 }

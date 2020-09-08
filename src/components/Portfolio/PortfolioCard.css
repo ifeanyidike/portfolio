@@ -35,9 +35,10 @@
   }
 }
 
-.MuiPaper-root.MuiCard-root {
+.portfoliocard {
   margin-top: 30px !important;
   position: relative;
+  max-width: 400px;
 }
 
 .portfoliocard__date {
@@ -140,4 +141,10 @@
   font-size: 13px;
   padding-left: 7px;
   font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .portfoliocard {
+    max-width: 350px;
+  }
 }

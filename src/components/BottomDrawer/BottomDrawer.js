@@ -38,7 +38,7 @@ export default function IconLabelTabs() {
       >
         <Tab
           icon={<WorkIcon />}
-          label="MY WORKS"
+          label="PORTFOLIOS"
           style={{ color: "#3f51b5" }}
           component={Link}
           to="/portfolio"
@@ -46,7 +46,7 @@ export default function IconLabelTabs() {
 
         <Tab
           icon={<HighlightIcon />}
-          label="WHAT I OFFER"
+          label="SERVICES"
           style={{ color: "#008073" }}
           component={Link}
           to="/my-offer"
@@ -61,7 +61,7 @@ export default function IconLabelTabs() {
         />
 
         <Tab
-          label="GET IN TOUCH"
+          label="CONTACT"
           icon={<EmailIcon />}
           style={{ color: "#795548" }}
           component={Link}

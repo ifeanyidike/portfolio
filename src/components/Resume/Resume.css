@@ -137,6 +137,9 @@ p.item {
 }
 
 @media (max-width: 900px) {
+  .resume__body {
+    margin: 20px 5px 5px 5px !important;
+  }
   .resume__bodyTop {
     flex-direction: column;
     text-align: center;
@@ -158,6 +161,7 @@ p.item {
     width: inherit;
     margin-right: 0 !important;
     justify-content: space-between;
+    align-items: center;
   }
   .itemleft > h6 {
     background: none;
@@ -166,5 +170,15 @@ p.item {
 
   .itemleft > small:last-child {
     display: none;
+  }
+}
+
+@media (max-width: 796px) {
+  .resume__body {
+    margin: 80px 5px 5px 5px !important;
+  }
+  .itemleft > small,
+  .itemleft > h6 {
+    text-align: start;
   }
 }
