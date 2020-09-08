@@ -7,12 +7,8 @@ import EqualizerIcon from "@material-ui/icons/Equalizer";
 import EmailIcon from "@material-ui/icons/Email";
 import CreateIcon from "@material-ui/icons/Create";
 import DescriptionIcon from "@material-ui/icons/Description";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import { IconButton } from "@material-ui/core";
 import SideDrawerItem from "./SideDrawerItem";
+import Links from "./../Links";
 import { Link } from "react-router-dom";
 
 const SideDrawer = ({ show }) => {
@@ -105,44 +101,7 @@ const SideDrawer = ({ show }) => {
         />
         <li className="sidedrawer__iconsList">
           <div>
-            <a
-              href="https://web.facebook.com/codesprodigy/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <IconButton style={{ color: "#3b5998" }}>
-                <FacebookIcon />
-              </IconButton>
-            </a>
-            <a
-              href="https://github.com/ifeanyidike"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <IconButton style={{ color: "#000" }}>
-                <GitHubIcon />
-              </IconButton>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/ifeanyidesmonddike"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <IconButton style={{ color: "#0e76a8" }}>
-                <LinkedInIcon />
-              </IconButton>
-            </a>
-
-            <a
-              href="https://www.twitter.com/deepinsideai"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <IconButton style={{ color: "#00acee" }}>
-                <TwitterIcon />
-              </IconButton>
-            </a>
+            <Links bool="inline-block" />
           </div>
         </li>
       </ul>

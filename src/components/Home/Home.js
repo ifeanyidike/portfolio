@@ -14,14 +14,12 @@ const Home = () => {
     <div className="home">
       <div className="home__typed">
         <h1>
-          <Typed strings={["<u>Hi,</u>"]} typeSpeed={40}></Typed>
-        </h1>
-        <h2>
           <Typed
             strings={["I'm <strong>Ifeanyi</strong>,"]}
             typeSpeed={40}
           ></Typed>
-        </h2>
+        </h1>
+
         {/* <div>{` width: ${width}, height: ${height}`}</div> */}
         <h3>
           <Typed

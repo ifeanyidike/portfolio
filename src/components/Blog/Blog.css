@@ -31,8 +31,17 @@
 
 .blog__bodyItem h2 {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2rem;
   color: white;
   margin-top: 20px !important;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .blog__bodyItem {
+    padding: 60px 40px;
+  }
+  .blog__bodyItem h2 {
+    font-size: 1.5rem;
+  }
 }

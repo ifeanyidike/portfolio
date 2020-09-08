@@ -66,7 +66,11 @@ export default function PortfolioCard(props) {
             </Link>
           )}
           {props.dribbleurl && (
-            <Link to={`/portfolio/${props.dribbleurl}`}>
+            <a
+              href={`${props.dribbleurl}`}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Fab
                 size="small"
                 color="secondary"
@@ -75,11 +79,15 @@ export default function PortfolioCard(props) {
               >
                 <i class="fab fa-dribbble"></i>
               </Fab>
-            </Link>
+            </a>
           )}
 
           {props.githuburl && (
-            <Link to={`/portfolio/${props.githuburl}`}>
+            <a
+              href={`${props.githuburl}`}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Fab
                 size="small"
                 color="secondary"
@@ -88,11 +96,15 @@ export default function PortfolioCard(props) {
               >
                 <GitHubIcon />
               </Fab>
-            </Link>
+            </a>
           )}
 
           {props.siteurl && (
-            <Link to={`/portfolio/${props.siteurl}`}>
+            <a
+              href={`${props.siteurl}`}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Fab
                 size="small"
                 color="secondary"
@@ -101,7 +113,7 @@ export default function PortfolioCard(props) {
               >
                 <OpenInNewIcon />
               </Fab>
-            </Link>
+            </a>
           )}
         </div>
       </div>

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 @-webkit-keyframes bounce {
   0%,
   100% {
@@ -37,7 +39,7 @@
 }
 
 .home {
-  background-color: #d49a89;
+  background-color: #ce914f;
   height: 88.5vh;
   width: 90vw !important;
   /* overflow: hidden; Hide vertical scrollbar */
@@ -45,24 +47,25 @@
   background-image: url("../../images/portfolio-pic.png");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 35pt;
   background-blend-mode: soft-light;
+  background-position-y: 35pt;
 }
 
 .home__typed {
   font-family: "Roboto", sans-serif;
   margin-left: 40px !important;
-  color: #f4f4f4 !important;
+  color: white !important;
 }
 
 .home__typed > h1 {
-  margin-top: 8vh !important;
-  font-weight: 400 !important;
+  font-family: "Parisienne", cursive;
+  margin-top: 12vh !important;
+  font-weight: 700 !important;
   line-height: 1.5;
   font-size: 63px !important;
 }
 
-.home__typed > h2:hover {
+.home__typed > h1:hover {
   animation: bounce 2.5s infinite;
   -webkit-animation: bounce 2.5s infinite;
   -moz-animation: bounce 2.5s infinite;
@@ -79,12 +82,13 @@
   font-weight: 200 !important;
   line-height: 1.5;
   margin-top: 2vh;
-  font-size: 40px !important;
+  font-size: 36px !important;
 }
 .home__typed > h4 {
-  font-weight: 200 !important;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 300 !important;
   line-height: 1.5;
-  margin-top: 3vh;
+  margin-top: 3vh !important;
   font-size: 20px !important;
 }
 
@@ -94,6 +98,10 @@
   margin-top: 5vh !important;
   border-radius: 20px !important;
   color: white !important;
+  animation: bounce 2.5s infinite;
+  -webkit-animation: bounce 2.5s infinite;
+  -moz-animation: bounce 2.5s infinite;
+  -o-animation: bounce 2.5s infinite;
 }
 
 .hireme__link {
@@ -119,6 +127,12 @@
   right: 0;
 }
 
+@media (max-width: 1300px) {
+  .home {
+    height: 100vh;
+  }
+}
+
 @media (max-width: 900px) {
   .home {
     width: 82.6vw;
@@ -139,8 +153,11 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .home {
-    height: 100vh;
+@media (max-width: 330px) {
+  .home__typed > h1 {
+    font-size: 47px !important;
+  }
+  .home__typed > h3 {
+    font-size: 30px !important;
   }
 }
