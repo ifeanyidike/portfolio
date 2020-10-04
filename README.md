@@ -12,6 +12,8 @@ The app is given a no-refresh effect, thanks to the react-router-dom.
 
 Also, since firebase offers real-time data access, events occuring in the backend is fired off to the frontend in realtime.
 
+Check the live website [here](http://ifeanyidesmonddike.web.app)
+
 
 Dependencies used on the project include:
 
